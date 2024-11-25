@@ -1,0 +1,126 @@
+.featureContainerTop{
+    width: 100%;
+    background-color: #E2F5FB;
+    display: flex;
+    justify-content: center;
+
+}
+
+.featureContainerBottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cardContainerTop{
+    background-color: #17414F;
+    font-family: jost;
+    padding: 0px 20px 20px 20px ;
+    border-radius: 20px 20px 0px 0px ;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.cardContainerBottom{
+    background-color: #17414F;
+    font-family: jost;
+    padding: 0px 20px 20px 20px ;
+    border-radius: 0px 0px 20px 20px ;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.card h5{
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: jost;
+    padding: 5px;
+}
+.card p{
+    color: #D9D9D9;
+    font-size: 0.9rem;
+    font-family: jost;
+    padding: 3px;
+    font-weight: 300;
+}
+
+.cardContainerTop .card:nth-child(1){
+    margin-top: -35px;
+}
+
+
+
+@media screen and (min-width:768px){
+    .cardContainerTop{
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .cardContainerBottom{
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .cardContainerTop .card:nth-child(1){
+        margin-top: -45px;
+    }
+    .cardContainerTop .card:nth-child(2){
+        margin-top: -45px;
+    }
+    .cardContainerTop .card:nth-child(3){
+        margin-top: -45px;
+    }
+    .card{
+        width: 30%;
+    }
+    
+    .card img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .card{
+        width: 30%;
+        margin-bottom: 16px;
+    }
+    .cardContainerTop .card:nth-child(1){
+        margin-top: -55px;
+    }
+    .cardContainerTop .card:nth-child(2){
+        margin-top: -55px;
+    }
+    .cardContainerTop .card:nth-child(3){
+        margin-top: -55px;
+    }
+    .card img{
+        width: 80px !important;
+        height: 80px !important;
+    }
+}

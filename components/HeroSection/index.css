@@ -1,0 +1,139 @@
+.heroContainer{
+    background: #E2F5FB;
+    width:100%;
+    padding:15px;
+}
+
+
+.heroContainer h1{
+    color: #003569;
+    text-align: center;
+    font-family:Jost;
+    font-size:1.5rem;
+    z-index: -1;
+}
+
+
+.responsiveContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+@media screen and (min-width:768px){
+    .heroContainer h1{
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+    .responsiveContainer{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.heroFirstBox{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0px;
+}
+.heroFirstBox p{
+    color: #727272;
+    font-size: 1rem;
+    font-family:Jost;  
+}
+.heroFirstBox h3{
+    color: #17414F;
+    font-size: 1rem;
+    font-family:Jost; 
+    font-weight: 400; 
+}
+
+.heroFirstBox button{
+    background: #17414F;
+    color:#fff;
+    height: 1.7rem;
+    width:6rem;
+    border-radius: 999px;
+    margin-top: 10px;
+}
+.heroImgContainer{
+    width: min(80% , 450px)!important;
+    margin-top: 10px;
+}
+.heroImg{
+    width: min(90% , 300px)!important;
+    height: auto;
+}
+@media screen and (min-width:768px){
+    .heroImg{
+        width: 80%!important;
+        
+    }
+    .heroFirstBox h3{
+        font-size: 1.2rem;
+    }
+}
+
+.heroSecondBox{
+    margin-top: 40px;
+    width: 80%;
+}
+.heroSecondBox .boxInside{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.heroSecondBox img{
+    margin-right: 20px;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.heroSecondBox div h6{
+    color: #17414F;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    
+}
+.heroSecondBox div p{
+    color: #727272;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:768px){
+    .heroFirstBox{
+        width: 25%;
+    }
+    .heroImgContainer{
+        width: 40% !important;
+    }
+    
+    .heroSecondBox{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .heroContainer h1{
+        font-size: 3.5rem;
+    }
+    .heroSecondBox img{
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .heroSecondBox div h6{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .heroSecondBox img{
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
